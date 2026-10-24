@@ -1,14 +1,26 @@
-## Desenvolvimento de Sistemas Corporativos - Atividade Inicial
+# Atividade Inicial
 
+Primeira API com Spring Boot: endpoints de boas-vindas
 
-### Objetivo: Criar uma aplicação simples utilizando Spring Boot, onde terá 2 endpoints.
+Atividade de **Desenvolvimento de Sistemas Corporativos** (DSC) — IFRN.
 
-### Endpoint de boas vindas: GET /welcome
-- Mostra uma mensagem de Boas vindas quando acessado.
-- Exemplo: "Bem-vindo!"
+## Stack
 
-### Endpoint de boas vindas personalizado: GET /welcome-aluno
-- Mostra uma mensagem de boas vindas com o nome do aluno.
-- "Bem-vindo, [nome]!"
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 
-Os dois endpoints estão no arquivo ```src/main/java/com/atividades/inicial/WelcomeController.java```.
+## Como rodar
+
+```bash
+./mvnw spring-boot:run
+```
+
+A API sobe em `http://localhost:8080`.
+
+## Endpoints
+
+| Rota | Resposta |
+|---|---|
+| `GET /welcome` | `Bem-vindo!` |
+| `GET /welcome-aluno` | `Bem-vindo, [nome]!` |
+
+Os dois ficam em `src/main/java/com/atividades/inicial/WelcomeController.java`.
